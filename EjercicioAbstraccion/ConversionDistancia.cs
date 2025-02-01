@@ -4,14 +4,16 @@ namespace EjercicioAbstraccion
 {
     public class ConversionDistancia : FormulaMatematica
     {
+
+        public double CantidadKilometros;
         public override double Calcular()
         {
-            throw new NotImplementedException();
+            return CantidadKilometros*0.62;
         }
 
         public override void Imprimir()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{CantidadKilometros} kms equivalen a {Calcular()} millas");
         }
     }
 }

@@ -4,14 +4,15 @@ namespace EjercicioAbstraccion
 {
     public class ConversionTemperatura : FormulaMatematica
     {
+        public double CantidadCelcius;
         public override double Calcular()
         {
-            throw new NotImplementedException();
+            return CantidadCelcius+273;
         }
 
         public override void Imprimir()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{CantidadCelcius} grados celsius equivalen a {Calcular()} grados farenheit");
         }
     }
 }

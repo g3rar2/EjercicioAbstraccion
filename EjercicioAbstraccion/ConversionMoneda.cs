@@ -4,14 +4,15 @@ namespace EjercicioAbstraccion
 {
     public class ConversionMoneda : FormulaMatematica
     {
+        public double CantidadLempiras;
         public override double Calcular()
         {
-            throw new NotImplementedException();
+            return CantidadLempiras * 25.25;
         }
 
         public override void Imprimir()
         {
-            throw new NotImplementedException();
+            Console.WriteLine($"{CantidadLempiras} Lps, equivalen a {Calcular()} dolares");
         }
     }
 }
